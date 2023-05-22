@@ -2,6 +2,11 @@ module github.com/rancher/norman
 
 go 1.20
 
+replace (
+	github.com/rancher/lasso => github.com/rayandas/lasso v1.27-rancher1
+	github.com/rancher/wrangler => github.com/rayandas/wrangler v1.27-rancher1
+)
+
 require (
 	github.com/ghodss/yaml v1.0.0
 	github.com/gorilla/websocket v1.5.0
